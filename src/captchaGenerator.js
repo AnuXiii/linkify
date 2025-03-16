@@ -1,9 +1,9 @@
 // captcha generator for sign up & sign in pages
-const captchaContainer = document.getElementById("captcha-container");
-const captchaInput = document.getElementById("captcha-input");
-const captchaRefresh = document.getElementById("captcha-refresh");
+export const captchaContainer = document.getElementById("captcha-container");
+export const captchaInput = document.getElementById("captcha-input");
+export const captchaRefresh = document.getElementById("captcha-refresh");
 
-function captchaGenerator() {
+export default function captchaGenerator() {
 	let captcha = Math.floor(Math.random() * 90000) + 10000;
 	return captcha;
 }

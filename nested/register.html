@@ -171,13 +171,15 @@
 			</section>
 		</div>
 		<!--  -->
-		<!--  -->
 		<script
 			type="text/javascript"
 			src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 		<!--  -->
-		<script
-			type="module"
-			src="/nested/nested.js"></script>
+		<script type="module">
+			import captchaGenerator from "/src/captchaGenerator.js";
+			document.addEventListener("DOMContentLoaded", () => {
+				captchaGenerator();
+			});
+		</script>
 	</body>
 </html>
