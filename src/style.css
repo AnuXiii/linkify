@@ -141,7 +141,7 @@
 
 	#qrcode {
 		img {
-			@apply rounded-md min-w-full drop-shadow-2xl;
+			@apply max-w-full w-full;
 		}
 	}
 
