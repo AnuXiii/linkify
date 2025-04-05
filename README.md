@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Linkify
 
 Linkify is a URL shortening service that allows users to shorten long URLs quickly and efficiently. It provides a user-friendly interface and additional features like QR code generation and local storage for managing shortened links.
