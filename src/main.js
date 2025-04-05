@@ -148,7 +148,11 @@ const eyeButtonGenerator = (copyButton, originalLink, qrcode, year, month, day, 
 		<span>${day}</span>
 		</div>`;
 		const orgLink = document.createElement("div");
+<<<<<<< HEAD
 		orgLink.innerHTML = /* html */ `<a href="${originalLink}" target="_blank" class="duration-200 block max-w-[calc(300px - 1rem)] hover:text-[var(--brand-primary-pink)] overflow-hidden text-nowrap text-ellipsis">${originalLink}</a>`;
+=======
+		orgLink.innerHTML = /* html */ `<a href="${originalLink}" target="_blank" class="duration-200 hover:text-[var(--brand-primary-pink)]">${originalLink}</a>`;
+>>>>>>> 1cd15e4ebece3de9e627f578e8a0f2c6975c4c0e
 		const header = document.createElement("header");
 		header.classList.add("flex", "justify-between", "items-center");
 		header.appendChild(qrcode);
@@ -185,7 +189,11 @@ const copyButtonGenerator = (shortenedLink) => {
 					href="${shortenedLink}"
 					target="_blank"
 					title="بازدید لینک"
+<<<<<<< HEAD
 					class="hover:text-[var(--brand-primary-pink)] duration-200 max-w-[calc(300px - 1rem)] overflow-hidden text-nowrap text-ellipsis max-[380px]:max-w-[100px]">
+=======
+					class="hover:text-[var(--brand-primary-pink)] duration-200 max-w-[200px] overflow-hidden text-nowrap text-ellipsis max-[380px]:max-w-[100px]">
+>>>>>>> 1cd15e4ebece3de9e627f578e8a0f2c6975c4c0e
 					${shortenedLink}
 					</a>	
 	`;
@@ -224,6 +232,11 @@ const qrButtonGenerator = (shortenedLink) => {
 		backdropActivator();
 		const qrcode = new QRCode(qrcodeContainer, {
 			text: shortenedLink,
+<<<<<<< HEAD
+=======
+			width: 420,
+			height: 420,
+>>>>>>> 1cd15e4ebece3de9e627f578e8a0f2c6975c4c0e
 			colorDark: "#fff",
 			colorLight: "#000",
 			correctLevel: QRCode.CorrectLevel.H,

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html
 	lang="fa"
@@ -240,3 +241,247 @@
 			src="/src/main.js"></script>
 	</body>
 </html>
+=======
+<!DOCTYPE html>
+<html
+	lang="fa"
+	dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/assests/icons/logo.png" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="لینکیفای یک ابزار برای کوتاه کردن لینک‌های طولانی شما است. سریع، امن و کاربردی." />
+		<meta
+			name="author"
+			content="Mahdi Rostami" />
+		<meta
+			name="keywords"
+			content="کوتاه کننده لینک, لینکیفای, کوتاه کردن لینک" />
+		<title>لینکیفای - پلتفرم کوتاه کننده لینک</title>
+		<!-- ionicons -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<!-- tostify -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+		<!-- css -->
+		<link
+			rel="stylesheet"
+			href="/src/style.css" />
+	</head>
+	<body class="relative">
+		<div class="fixed h-full w-full inset-0 z-[-1] backdrop-blur-md"></div>
+		<div id="app">
+			<header
+				class="max-w-screen-2xl p-8 m-auto mb-16 max-[420px]:p-4"
+				role="banner">
+				<div class="flex justify-between items-center">
+					<div class="logo">
+						<a href="/">
+							<img
+								src="/assests/icons/logo.png"
+								alt="لوگو لینکیفای"
+								class="w-24 h-24" />
+						</a>
+					</div>
+					<div class="flex items-center gap-4">
+						<!--  -->
+						<div class="flex items-center gap-4">
+							<div class="btn relative side-nav-container">
+								<a
+									role="button"
+									title="باز کردن"
+									href="javascript:void(0)"
+									class="primary-btn"
+									id="open-menu"
+									lite="true">
+									<span role="text">Mahdi</span>
+									<ion-icon name="chevron-down-outline"></ion-icon>
+								</a>
+								<ul
+									role="navigation"
+									id="side-nav"
+									class="text-center text-base overflow-hidden flex-col absolute z-10 left-0 mt-2 bg-[var(--black)] border border-[var(--lite-border)] rounded-md shadow-2xl hidden">
+									<li>
+										<a
+											role="link"
+											href="#"
+											class="text-nowrap block w-full py-4 px-8 h-full duration-200 hover:bg-[var(--brand-primary-blue)] hover:text-white"
+											>تماس با پشتیبانی</a
+										>
+									</li>
+									<hr class="opacity-10 mx-[-2rem]" />
+									<li>
+										<a
+											role="link"
+											href="#"
+											class="text-nowrap block w-full py-4 px-8 h-full duration-200 hover:bg-rose-500 hover:text-white"
+											>خروج از حساب</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--  -->
+					</div>
+				</div>
+			</header>
+			<div class="max-w-screen-2xl p-8 m-auto mb-16 max-[420px]:p-4">
+				<section class="text-center flex flex-col justify-center items-center gap-4">
+					<h1 class="font-dana-bold text-6xl leading-loose gradient-text max-[530px]:text-3xl">
+						لینک های بلــــــند خود را کوتاه کنید
+					</h1>
+					<p class="leading-loose max-[530px]:text-sm">
+						لینکیفای یک سرویس کوتاه کننده لینک بسیار سریع و کار آمد است که تجربه بازدید کنندگان شما را آسان تر میکند.
+					</p>
+				</section>
+			</div>
+			<div class="max-w-screen-2xl p-8 m-auto mb-8 max-[420px]:p-4">
+				<div class="flex justify-center items-center relative min-[991px]:max-w-[881px] m-auto">
+					<input
+						type="url"
+						name="url"
+						id="url"
+						required
+						placeholder="لینک را وارد کنید"
+						class="w-full rounded-[30px] border-2 border-[var(--lite-border)] bg-[var(--gray)] py-4 pr-10 duration-200 ease-in-out focus:border-[var(--brand-primary-blue)]" />
+					<div class="absolute left-[0.3rem]">
+						<button
+							type="button"
+							id="shortener-btn"
+							class="primary-btn"
+							icon="true"
+							rotate="true"
+							aria-label="کوتاه کردن لینک">
+							<i class="block">
+								<ion-icon
+									name="arrow-back-outline"
+									aria-hidden="true"></ion-icon>
+							</i>
+							<ul class="hidden">
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</button>
+					</div>
+					<div class="absolute right-[1rem] flex justify-center items-center">
+						<ion-icon
+							name="link-outline"
+							aria-hidden="true"></ion-icon>
+					</div>
+				</div>
+			</div>
+			<div class="max-w-screen-2xl p-8 m-auto mb-16 max-[420px]:p-4">
+				<div class="relative">
+					<table
+						class="w-full text-right border-separate border-spacing-y-4 relative"
+						id="table">
+						<tr class="bg-[--gray] dana-bold text-lg text-white text-opacity-80">
+							<th class="p-8 w-full max-[1120px]:p-4 hidden max-[1120px]:table-cell">لینک های کوتاه شده</th>
+							<th class="p-8 max-[1120px]:p-4 max-[1120px]:hidden">لینک کوتاه</th>
+							<th class="p-8 max-[1120px]:p-4 max-[1120px]:hidden">لینک اورجینال</th>
+							<th class="p-8 max-[1120px]:p-4 max-[1120px]:hidden">QR Code</th>
+							<th class="p-8 max-[1120px]:p-4 max-[1120px]:hidden">تعداد کلیک</th>
+							<th class="p-8 max-[1120px]:p-4 max-[1120px]:hidden">
+								<button
+									type="button"
+									title="مرتب سازی"
+									id="sort"
+									class="flex justify-center items-center gap-2"
+									aria-label="مرتب سازی بر اساس تاریخ">
+									<span>تاریخ</span>
+									<span class="flex justify-center items-center"
+										><ion-icon
+											name="swap-vertical-outline"
+											aria-hidden="true"></ion-icon
+									></span>
+								</button>
+							</th>
+							<th class="p-8 max-[1120px]:p-4 max-[1120px]:hidden">اقدامات</th>
+						</tr>
+						<tbody class="result-container"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div
+			role="dialog"
+			class="backdrop fixed inset-0 z-10 bg-black bg-opacity-70 backdrop-blur-sm hidden"></div>
+		<div
+			role="dialog"
+			class="qr-code-modal p-8 w-[580px] h-max max-w-[95%] bg-[var(--gray)] rounded-md border-2 border-[var(--lite-border)] fixed z-20 top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] justify-center items-center hidden">
+			<div class="qr-code-modal-inner flex flex-col justify-center items-center gap-8">
+				<div
+					id="qrcode"
+					class="qr-code relative overflow-hidden"></div>
+				<a
+					id="download"
+					class="primary-btn"
+					hover="true"
+					lite="true"
+					aria-label="دانلود QR Code">
+					<span>دانلود</span>
+					<i>
+						<ion-icon
+							name="download-outline"
+							aria-hidden="true"></ion-icon>
+					</i>
+				</a>
+			</div>
+			<button
+				type="button"
+				class="primary-btn absolute top-2 right-2 bg-rose-600 shadow-none close-button"
+				hover="true"
+				icon="true"
+				aria-label="بستن">
+				<i class="block">
+					<ion-icon
+						name="close-outline"
+						aria-hidden="true"></ion-icon>
+				</i>
+			</button>
+		</div>
+		<div
+			role="dialog"
+			class="info-modal p-4 w-[580px] h-max max-w-[95%] bg-[var(--gray)] rounded-md border-2 border-[var(--lite-border)] fixed z-10 top-[50%] right-[50%] translate-y-[-50%] translate-x-[50%] justify-center items-center hidden">
+			<!--  -->
+		</div>
+		<div class="fixed right-4 bottom-4">
+			<button
+				type="button"
+				title="پاک کردن لوکال استوریج"
+				id="clear-localStorage"
+				class="flex justify-center items-center text-white py-3 px-4 text-base ring-2 ring-rose-500 bg-[var(--gray)] shadow-none rounded-md duration-200 hover:ring-offset-2 hover:ring-offset-rose-500 group"
+				aria-label="پاک کردن لوکال استوریج">
+				<span
+					class="block opacity-0 w-0 translate-y-full overflow-hidden duration-200 transition-[opacity,trasnform] group-hover:w-full group-hover:opacity-100 group-hover:translate-y-0"
+					>پاکسازی</span
+				>
+				<ion-icon
+					name="trash-bin-outline"
+					class="text-xl duration-200 group-hover:w-0 group-hover:overflow-hidden group-hover:text-[0px]"
+					aria-hidden="true"></ion-icon>
+			</button>
+		</div>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+		<!--  -->
+		<script
+			type="module"
+			src="/src/main.js"></script>
+	</body>
+</html>
+>>>>>>> 1cd15e4ebece3de9e627f578e8a0f2c6975c4c0e

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="fa">
 	<head>
@@ -183,3 +184,190 @@
 		</script>
 	</body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="fa">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/assests/icons/logo.png" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="لینکیفای یک ابزار برای کوتاه کردن لینک‌های طولانی شما است. سریع، امن و کاربردی." />
+		<title>ثبت نام</title>
+		<!-- ionicons -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<!-- tostify -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+		<!-- css -->
+		<link
+			rel="stylesheet"
+			href="/src/style.css" />
+	</head>
+	<body class="relative">
+		<div class="fixed h-full w-full inset-0 z-[-1] backdrop-blur-md"></div>
+		<div id="app">
+			<section class="max-w-screen-2xl m-auto px-8 max-[420px]:p-4">
+				<div class="grid grid-cols-2 justify-center items-center min-h-screen max-[991px]:grid-cols-1">
+					<div class="flex flex-col max-[991px]:hidden">
+						<figure>
+							<img
+								src="/assests/figures/sign-img.svg"
+								alt="easy-url"
+								class="w-full h-full drop-shadow-2xl" />
+						</figure>
+					</div>
+					<!--  -->
+					<div class="flex flex-col">
+						<div class="flex flex-col gap-2 mb-8">
+							<h1 class="text-2xl font-dana-bold text-white text-opacity-80">خوش آمدید.</h1>
+							<p class="text-sm">
+								<a
+									href="register.html"
+									class="text-[var(--brand-primary-blue)]"
+									>ثبت نام
+								</a>
+								کنید و یا
+								<a
+									href="login.html"
+									class="text-[var(--brand-primary-blue)]"
+									>وارد شوید</a
+								>
+								تا از خدمات کامل ما بهره مند شوید.
+							</p>
+						</div>
+						<form
+							action="javascript:void(0)"
+							method="post"
+							name="sign-up"
+							id="sign-up"
+							class="w-full flex flex-col gap-4">
+							<div class="w-full">
+								<input
+									type="text"
+									name="name"
+									class="block w-full p-4 rounded-md text-sm border border-[var(--lite-border)] bg-[var(--gray)] duration-200 focus:border-[var(--brand-primary-blue)] placeholder:duration-200 focus:placeholder:opacity-0"
+									id="name"
+									placeholder="نام شما" />
+							</div>
+							<div class="w-full">
+								<input
+									type="email"
+									name="email"
+									class="block w-full p-4 rounded-md text-sm border border-[var(--lite-border)] bg-[var(--gray)] duration-200 focus:border-[var(--brand-primary-blue)] placeholder:duration-200 focus:placeholder:opacity-0"
+									id="email"
+									placeholder="ایمیل" />
+							</div>
+							<div class="w-full">
+								<input
+									type="password"
+									name="password"
+									class="block w-full p-4 rounded-md text-sm border border-[var(--lite-border)] bg-[var(--gray)] duration-200 focus:border-[var(--brand-primary-blue)] placeholder:duration-200 focus:placeholder:opacity-0"
+									id="password"
+									placeholder="پسورد" />
+							</div>
+							<div class="w-full">
+								<input
+									type="password"
+									name="password-r"
+									class="block w-full p-4 rounded-md text-sm border border-[var(--lite-border)] bg-[var(--gray)] duration-200 focus:border-[var(--brand-primary-blue)] placeholder:duration-200 focus:placeholder:opacity-0"
+									id="password-r"
+									placeholder="تکرار پسورد" />
+							</div>
+							<!--  -->
+							<div class="w-full flex justify-between items-center gap-4 max-[580px]:flex-col">
+								<!--  -->
+								<div class="flex gap-2 items-center max-[580px]:w-full max-[580px]:flex-col">
+									<div
+										class="text-center w-36 max-[580px]:w-full rounded-md select-none pointer-events-none border-2 border-[var(--lite-border)] bg-slate-600 px-4 pr-0.5 py-2 tracking-[1rem] font-[Kanit]"
+										id="captcha-container"></div>
+									<!--  -->
+									<div class="flex gap-2 w-full">
+										<div class="flex w-36 max-[580px]:w-full">
+											<input
+												type="text"
+												name="captcha-input"
+												id="captcha-input"
+												class="w-36 max-[580px]:w-full block p-3 rounded-md text-sm border border-[var(--lite-border)] bg-[var(--gray)] duration-200 focus:border-[var(--brand-primary-blue)] placeholder:duration-200 focus:placeholder:opacity-0" />
+										</div>
+										<button
+											id="captcha-refresh"
+											class="primary-btn rounded-md py-3 px-3"
+											lite="true"
+											title="بارگزاری مجدد">
+											<ion-icon name="refresh-outline"></ion-icon>
+										</button>
+									</div>
+									<!--  -->
+								</div>
+								<div class="flex max-[580px]:mr-auto">
+									<button
+										type="submit"
+										class="primary-btn"
+										hover="true">
+										ثبت نام
+									</button>
+								</div>
+								<!--  -->
+							</div>
+							<!--  -->
+							<div class="w-full mt-8 flex flex-col gap-8">
+								<div class="flex items-center gap-4">
+									<div class="line w-full h-[1px] bg-white bg-opacity-10"></div>
+									<h2 class="text-sm text-nowrap text-white text-opacity-50">یا از طریق</h2>
+									<div class="line w-full h-[1px] bg-white bg-opacity-10"></div>
+								</div>
+								<div class="flex justify-center items-center gap-4 max-[420px]:flex-col">
+									<a
+										href="#"
+										class="primary-btn rounded-md text-opacity-90 max-[420px]:w-full"
+										lite="true"
+										hover="true">
+										<p>گوگل وارد شوید</p>
+										<ion-icon
+											name="logo-google"
+											class="text-[var(--brand-primary-pink)]"></ion-icon>
+									</a>
+									<a
+										href="login.html"
+										class="primary-btn rounded-md text-opacity-90 max-[420px]:w-full"
+										lite="true"
+										rotate="true"
+										hover="true">
+										<p>حساب کاربری</p>
+										<ion-icon
+											name="log-in-outline"
+											class="text-[var(--brand-primary-pink)]"></ion-icon>
+									</a>
+								</div>
+							</div>
+						</form>
+						<!--  -->
+					</div>
+				</div>
+			</section>
+		</div>
+		<!--  -->
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+		<!--  -->
+		<script type="module">
+			import captchaGenerator from "/src/captchaGenerator.js";
+			document.addEventListener("DOMContentLoaded", () => {
+				captchaGenerator();
+			});
+		</script>
+	</body>
+</html>
+>>>>>>> 1cd15e4ebece3de9e627f578e8a0f2c6975c4c0e

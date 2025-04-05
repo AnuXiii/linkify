@@ -141,7 +141,11 @@
 
 	#qrcode {
 		img {
+<<<<<<< HEAD
 			@apply max-w-full w-full;
+=======
+			@apply rounded-md min-w-full drop-shadow-2xl;
+>>>>>>> 1cd15e4ebece3de9e627f578e8a0f2c6975c4c0e
 		}
 	}
 
